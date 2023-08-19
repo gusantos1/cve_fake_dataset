@@ -1,0 +1,1 @@
+# Dados fakes de CVE
