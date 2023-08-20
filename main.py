@@ -13,7 +13,7 @@ from functions import gen_hostname, gen_cve, gen_ipv4, create_host
 from directory import create_directories
 
 # ----------------- CRIAÇÃO DOS DIRETÓRIOS ---------------------
-sub_dirs = create_directories()
+valid_dir, base_dir, sub_dir = create_directories()
 
 # ----------------- FILAS ---------------------
 queue_hostname = Queue(maxsize=len(range_name))
@@ -37,14 +37,20 @@ while not queue_hostname.empty():
             queue_hostname, queue_ipv4, manufacturer_equipament, range_os, range_region
         )
     )
-
 while not queue_cve.empty():
     cve_list.append(gen_cve(queue_cve))
 
+
+# ----------------- ESCREVENDO DIMENSÃO ---------------------
+df_dimension = pd.DataFrame(dimension_host).to_csv(
+    f"{base_dir}/dim.csv", index=False, sep="|"
+)
+
 # ----------------- ESCREVENDO ARQUIVOS NOS SUBDIRETÓRIOS ---------------------
-for directory in sub_dirs[1]:
-    max_files = rd.randint(10, 20)
-    for i in range(1, max_files + 1):
+
+max_files = rd.randint(10, 50) + 1
+for directory in sub_dir:
+    for i in range(1, max_files):
         possible_extension = ["json", "csv"]
         extension = rd.choice(possible_extension)
         file_name = f"{directory / str(i).zfill(3)}.{extension}"
@@ -72,3 +78,6 @@ for directory in sub_dirs[1]:
                     raise ValueError(
                         f"Extensão de arquivo '{extension}' não suportada."
                     )
+
+# class Writer:
+#     def __init__(self, data:)
