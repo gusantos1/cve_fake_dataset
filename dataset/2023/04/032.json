@@ -1,0 +1,10 @@
+{
+    "hostname_id": 204,
+    "cve_id": 9275,
+    "cve_name": "CVE-2022-9275",
+    "cve_severity": "Critical",
+    "cve_created": "2022-02-04",
+    "cve_publish": "2022-05-04",
+    "cwe_id": 877,
+    "cwe_name": "CWE-877"
+}

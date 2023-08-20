@@ -1,0 +1,10 @@
+{
+    "hostname_id": 195,
+    "cve_id": 5,
+    "cve_name": "CVE-2021-0005",
+    "cve_severity": "Critical",
+    "cve_created": "2021-12-15",
+    "cve_publish": "2022-02-18",
+    "cwe_id": 537,
+    "cwe_name": "CWE-537"
+}

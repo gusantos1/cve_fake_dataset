@@ -1,0 +1,10 @@
+{
+    "hostname_id": 159,
+    "cve_id": 7202,
+    "cve_name": "CVE-2021-7202",
+    "cve_severity": "Critical",
+    "cve_created": "2021-09-26",
+    "cve_publish": "2021-11-14",
+    "cwe_id": 769,
+    "cwe_name": "CWE-769"
+}

@@ -1,0 +1,10 @@
+{
+    "hostname_id": 173,
+    "cve_id": 7847,
+    "cve_name": "CVE-2021-7847",
+    "cve_severity": "High",
+    "cve_created": "2021-09-04",
+    "cve_publish": "2021-10-09",
+    "cwe_id": 269,
+    "cwe_name": "CWE-269"
+}

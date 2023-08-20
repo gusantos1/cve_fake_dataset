@@ -1,0 +1,10 @@
+{
+    "hostname_id": 159,
+    "cve_id": 4443,
+    "cve_name": "CVE-2021-4443",
+    "cve_severity": "Low",
+    "cve_created": "2021-12-19",
+    "cve_publish": "2022-02-07",
+    "cwe_id": 250,
+    "cwe_name": "CWE-250"
+}

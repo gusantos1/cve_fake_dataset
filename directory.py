@@ -22,8 +22,10 @@ def create_directories() -> Tuple[Path, Path]:
         |- 12 (Dezembro)
     """
     try:
+        source = Path('dataset')
+        source.mkdir(exist_ok=True)
         current_year = str(dt.now().year)
-        base_directory = Path(current_year)
+        base_directory = source / Path(current_year)
         base_directory.mkdir(exist_ok=True)
         subdirs = []
         for month in range(1, 13):

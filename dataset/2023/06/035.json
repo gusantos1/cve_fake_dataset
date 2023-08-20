@@ -1,0 +1,10 @@
+{
+    "hostname_id": 130,
+    "cve_id": 4846,
+    "cve_name": "CVE-2021-4846",
+    "cve_severity": "Critical",
+    "cve_created": "2021-08-26",
+    "cve_publish": "2021-08-30",
+    "cwe_id": 457,
+    "cwe_name": "CWE-457"
+}

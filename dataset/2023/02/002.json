@@ -1,0 +1,10 @@
+{
+    "hostname_id": 103,
+    "cve_id": 4510,
+    "cve_name": "CVE-2022-4510",
+    "cve_severity": "Low",
+    "cve_created": "2022-08-11",
+    "cve_publish": "2022-10-23",
+    "cwe_id": 947,
+    "cwe_name": "CWE-947"
+}

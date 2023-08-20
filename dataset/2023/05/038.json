@@ -1,0 +1,10 @@
+{
+    "hostname_id": 131,
+    "cve_id": 3947,
+    "cve_name": "CVE-2021-3947",
+    "cve_severity": "Medium",
+    "cve_created": "2021-08-19",
+    "cve_publish": "2021-10-24",
+    "cwe_id": 877,
+    "cwe_name": "CWE-877"
+}

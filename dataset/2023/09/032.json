@@ -1,0 +1,10 @@
+{
+    "hostname_id": 130,
+    "cve_id": 7856,
+    "cve_name": "CVE-2021-7856",
+    "cve_severity": "Critical",
+    "cve_created": "2021-08-26",
+    "cve_publish": "2021-11-06",
+    "cwe_id": 964,
+    "cwe_name": "CWE-964"
+}

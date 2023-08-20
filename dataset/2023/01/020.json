@@ -1,0 +1,10 @@
+{
+    "hostname_id": 125,
+    "cve_id": 5064,
+    "cve_name": "CVE-2021-5064",
+    "cve_severity": "Low",
+    "cve_created": "2021-10-06",
+    "cve_publish": "2021-12-24",
+    "cwe_id": 544,
+    "cwe_name": "CWE-544"
+}

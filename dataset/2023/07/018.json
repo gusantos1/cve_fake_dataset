@@ -1,0 +1,10 @@
+{
+    "hostname_id": 151,
+    "cve_id": 2745,
+    "cve_name": "CVE-2021-2745",
+    "cve_severity": "Low",
+    "cve_created": "2021-10-17",
+    "cve_publish": "2021-11-05",
+    "cwe_id": 877,
+    "cwe_name": "CWE-877"
+}

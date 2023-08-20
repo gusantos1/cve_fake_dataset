@@ -1,0 +1,10 @@
+{
+    "hostname_id": 172,
+    "cve_id": 1754,
+    "cve_name": "CVE-2022-1754",
+    "cve_severity": "Critical",
+    "cve_created": "2022-01-29",
+    "cve_publish": "2022-04-23",
+    "cwe_id": 721,
+    "cwe_name": "CWE-721"
+}

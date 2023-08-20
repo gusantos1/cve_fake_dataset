@@ -1,0 +1,10 @@
+{
+    "hostname_id": 201,
+    "cve_id": 5133,
+    "cve_name": "CVE-2021-5133",
+    "cve_severity": "Medium",
+    "cve_created": "2021-12-30",
+    "cve_publish": "2022-01-14",
+    "cwe_id": 193,
+    "cwe_name": "CWE-193"
+}

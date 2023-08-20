@@ -1,0 +1,10 @@
+{
+    "hostname_id": 102,
+    "cve_id": 9617,
+    "cve_name": "CVE-2022-9617",
+    "cve_severity": "Low",
+    "cve_created": "2022-08-11",
+    "cve_publish": "2022-10-22",
+    "cwe_id": 193,
+    "cwe_name": "CWE-193"
+}

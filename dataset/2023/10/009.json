@@ -1,0 +1,10 @@
+{
+    "hostname_id": 135,
+    "cve_id": 6732,
+    "cve_name": "CVE-2022-6732",
+    "cve_severity": "Low",
+    "cve_created": "2022-07-06",
+    "cve_publish": "2022-07-29",
+    "cwe_id": 269,
+    "cwe_name": "CWE-269"
+}

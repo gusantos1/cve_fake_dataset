@@ -1,0 +1,10 @@
+{
+    "hostname_id": 172,
+    "cve_id": 2861,
+    "cve_name": "CVE-2022-2861",
+    "cve_severity": "Critical",
+    "cve_created": "2022-07-20",
+    "cve_publish": "2022-08-19",
+    "cwe_id": 457,
+    "cwe_name": "CWE-457"
+}

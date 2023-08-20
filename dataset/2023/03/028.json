@@ -1,0 +1,10 @@
+{
+    "hostname_id": 159,
+    "cve_id": 8432,
+    "cve_name": "CVE-2022-8432",
+    "cve_severity": "Low",
+    "cve_created": "2022-06-21",
+    "cve_publish": "2022-08-05",
+    "cwe_id": 544,
+    "cwe_name": "CWE-544"
+}

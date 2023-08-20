@@ -1,0 +1,10 @@
+{
+    "hostname_id": 209,
+    "cve_id": 8847,
+    "cve_name": "CVE-2022-8847",
+    "cve_severity": "Medium",
+    "cve_created": "2022-08-15",
+    "cve_publish": "2022-10-13",
+    "cwe_id": 457,
+    "cwe_name": "CWE-457"
+}

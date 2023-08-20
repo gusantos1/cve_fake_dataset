@@ -1,0 +1,10 @@
+{
+    "hostname_id": 110,
+    "cve_id": 3832,
+    "cve_name": "CVE-2022-3832",
+    "cve_severity": "Critical",
+    "cve_created": "2022-03-14",
+    "cve_publish": "2022-05-03",
+    "cwe_id": 631,
+    "cwe_name": "CWE-631"
+}

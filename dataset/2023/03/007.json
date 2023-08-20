@@ -1,0 +1,10 @@
+{
+    "hostname_id": 161,
+    "cve_id": 3876,
+    "cve_name": "CVE-2021-3876",
+    "cve_severity": "Critical",
+    "cve_created": "2021-10-03",
+    "cve_publish": "2021-10-13",
+    "cwe_id": 631,
+    "cwe_name": "CWE-631"
+}

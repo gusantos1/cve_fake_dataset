@@ -1,0 +1,10 @@
+{
+    "hostname_id": 129,
+    "cve_id": 1216,
+    "cve_name": "CVE-2021-1216",
+    "cve_severity": "Low",
+    "cve_created": "2021-12-06",
+    "cve_publish": "2021-12-21",
+    "cwe_id": 721,
+    "cwe_name": "CWE-721"
+}

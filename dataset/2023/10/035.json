@@ -1,0 +1,10 @@
+{
+    "hostname_id": 131,
+    "cve_id": 6646,
+    "cve_name": "CVE-2022-6646",
+    "cve_severity": "Critical",
+    "cve_created": "2022-06-14",
+    "cve_publish": "2022-06-25",
+    "cwe_id": 511,
+    "cwe_name": "CWE-511"
+}

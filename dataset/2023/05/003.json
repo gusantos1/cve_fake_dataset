@@ -1,0 +1,10 @@
+{
+    "hostname_id": 197,
+    "cve_id": 2057,
+    "cve_name": "CVE-2021-2057",
+    "cve_severity": "Medium",
+    "cve_created": "2021-09-29",
+    "cve_publish": "2021-10-12",
+    "cwe_id": 544,
+    "cwe_name": "CWE-544"
+}

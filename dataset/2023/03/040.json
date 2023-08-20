@@ -1,0 +1,10 @@
+{
+    "hostname_id": 170,
+    "cve_id": 5028,
+    "cve_name": "CVE-2021-5028",
+    "cve_severity": "Low",
+    "cve_created": "2021-12-24",
+    "cve_publish": "2022-01-31",
+    "cwe_id": 457,
+    "cwe_name": "CWE-457"
+}

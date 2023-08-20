@@ -32,4 +32,3 @@ range_cve = sorted(
     list({(gen_ids(4), rd.choice(range_cwe)) for _ in range(0, 100)}),
     key=lambda i: (i[1], i[0]),
 )
-print()

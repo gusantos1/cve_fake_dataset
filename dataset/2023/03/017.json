@@ -1,0 +1,10 @@
+{
+    "hostname_id": 187,
+    "cve_id": 3360,
+    "cve_name": "CVE-2022-3360",
+    "cve_severity": "Critical",
+    "cve_created": "2022-08-09",
+    "cve_publish": "2022-08-12",
+    "cwe_id": 537,
+    "cwe_name": "CWE-537"
+}

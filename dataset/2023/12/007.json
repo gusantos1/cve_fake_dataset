@@ -1,0 +1,10 @@
+{
+    "hostname_id": 162,
+    "cve_id": 8839,
+    "cve_name": "CVE-2022-8839",
+    "cve_severity": "High",
+    "cve_created": "2022-04-20",
+    "cve_publish": "2022-05-09",
+    "cwe_id": 193,
+    "cwe_name": "CWE-193"
+}

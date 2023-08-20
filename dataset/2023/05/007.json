@@ -1,0 +1,10 @@
+{
+    "hostname_id": 158,
+    "cve_id": 1902,
+    "cve_name": "CVE-2022-1902",
+    "cve_severity": "Medium",
+    "cve_created": "2022-07-18",
+    "cve_publish": "2022-08-26",
+    "cwe_id": 864,
+    "cwe_name": "CWE-864"
+}

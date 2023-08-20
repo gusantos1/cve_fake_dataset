@@ -1,0 +1,10 @@
+{
+    "hostname_id": 173,
+    "cve_id": 8840,
+    "cve_name": "CVE-2021-8840",
+    "cve_severity": "Critical",
+    "cve_created": "2021-12-22",
+    "cve_publish": "2021-12-24",
+    "cwe_id": 511,
+    "cwe_name": "CWE-511"
+}

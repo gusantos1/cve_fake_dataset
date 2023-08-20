@@ -1,0 +1,10 @@
+{
+    "hostname_id": 116,
+    "cve_id": 1041,
+    "cve_name": "CVE-2021-1041",
+    "cve_severity": "High",
+    "cve_created": "2021-11-30",
+    "cve_publish": "2022-01-30",
+    "cwe_id": 552,
+    "cwe_name": "CWE-552"
+}

@@ -1,0 +1,10 @@
+{
+    "hostname_id": 101,
+    "cve_id": 8887,
+    "cve_name": "CVE-2022-8887",
+    "cve_severity": "Critical",
+    "cve_created": "2022-07-04",
+    "cve_publish": "2022-09-16",
+    "cwe_id": 644,
+    "cwe_name": "CWE-644"
+}

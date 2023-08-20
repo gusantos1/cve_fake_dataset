@@ -1,0 +1,10 @@
+{
+    "hostname_id": 151,
+    "cve_id": 8042,
+    "cve_name": "CVE-2022-8042",
+    "cve_severity": "Medium",
+    "cve_created": "2022-01-06",
+    "cve_publish": "2022-03-07",
+    "cwe_id": 610,
+    "cwe_name": "CWE-610"
+}

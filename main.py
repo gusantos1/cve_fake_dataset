@@ -43,14 +43,14 @@ while not queue_cve.empty():
 
 
 # ----------------- FUNÇÕES DE ESCRITA PARA CADA EXTENSÃO ---------------------
-def json_fact_template(full_file_path: str, data: dict, **kwargs) -> str:
+def template_fact_json(full_file_path: str, data: dict, **kwargs) -> str:
     with open(full_file_path, "w") as file:
         data = json.dumps(data, **kwargs)
         file.write(data)
     return full_file_path
 
 
-def csv_fact_template(full_file_path: str, data: dict, **kwargs) -> str:
+def template_fact_csv(full_file_path: str, data: dict, **kwargs) -> str:
     df = pd.DataFrame.from_dict(data, orient="index").T
     df.to_csv(full_file_path, **kwargs)
     return full_file_path
@@ -102,6 +102,6 @@ df_dimensao = pd.DataFrame(dimension_host).to_csv(
 
 # ----------------- ESCREVENDO FATOS NOS SUBDIRETÓRIOS ---------------------
 writer = Writer(sub_dir)
-writer.learn_to_write("csv", csv_fact_template, index=False, sep=";")
-writer.learn_to_write("json", json_fact_template, indent=4)
+writer.learn_to_write("csv", template_fact_csv, index=False, sep=";")
+writer.learn_to_write("json", template_fact_json, indent=4)
 writer.write()

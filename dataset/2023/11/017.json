@@ -1,0 +1,10 @@
+{
+    "hostname_id": 108,
+    "cve_id": 7868,
+    "cve_name": "CVE-2022-7868",
+    "cve_severity": "Critical",
+    "cve_created": "2022-03-12",
+    "cve_publish": "2022-04-16",
+    "cwe_id": 610,
+    "cwe_name": "CWE-610"
+}

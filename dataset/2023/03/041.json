@@ -1,0 +1,10 @@
+{
+    "hostname_id": 120,
+    "cve_id": 6711,
+    "cve_name": "CVE-2021-6711",
+    "cve_severity": "Low",
+    "cve_created": "2021-09-22",
+    "cve_publish": "2021-12-09",
+    "cwe_id": 566,
+    "cwe_name": "CWE-566"
+}

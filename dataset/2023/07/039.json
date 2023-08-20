@@ -1,0 +1,10 @@
+{
+    "hostname_id": 142,
+    "cve_id": 36,
+    "cve_name": "CVE-2021-0036",
+    "cve_severity": "Medium",
+    "cve_created": "2021-11-07",
+    "cve_publish": "2022-01-24",
+    "cwe_id": 193,
+    "cwe_name": "CWE-193"
+}

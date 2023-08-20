@@ -1,0 +1,10 @@
+{
+    "hostname_id": 107,
+    "cve_id": 3369,
+    "cve_name": "CVE-2021-3369",
+    "cve_severity": "Low",
+    "cve_created": "2021-12-31",
+    "cve_publish": "2022-02-04",
+    "cwe_id": 612,
+    "cwe_name": "CWE-612"
+}

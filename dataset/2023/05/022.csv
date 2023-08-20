@@ -1,0 +1,2 @@
+hostname_id;cve_id;cve_name;cve_severity;cve_created;cve_publish;cwe_id;cwe_name
+150;1670;CVE-2022-1670;Critical;2022-05-24;2022-08-02;610;CWE-610

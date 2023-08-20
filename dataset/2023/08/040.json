@@ -1,0 +1,10 @@
+{
+    "hostname_id": 191,
+    "cve_id": 6134,
+    "cve_name": "CVE-2022-6134",
+    "cve_severity": "Critical",
+    "cve_created": "2022-02-27",
+    "cve_publish": "2022-03-07",
+    "cwe_id": 610,
+    "cwe_name": "CWE-610"
+}

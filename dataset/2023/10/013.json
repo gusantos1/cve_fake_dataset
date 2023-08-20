@@ -1,0 +1,10 @@
+{
+    "hostname_id": 165,
+    "cve_id": 4329,
+    "cve_name": "CVE-2021-4329",
+    "cve_severity": "Medium",
+    "cve_created": "2021-12-13",
+    "cve_publish": "2022-01-24",
+    "cwe_id": 721,
+    "cwe_name": "CWE-721"
+}

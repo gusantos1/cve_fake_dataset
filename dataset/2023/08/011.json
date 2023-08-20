@@ -1,0 +1,10 @@
+{
+    "hostname_id": 188,
+    "cve_id": 9542,
+    "cve_name": "CVE-2021-9542",
+    "cve_severity": "Low",
+    "cve_created": "2021-09-09",
+    "cve_publish": "2021-09-11",
+    "cwe_id": 193,
+    "cwe_name": "CWE-193"
+}

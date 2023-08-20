@@ -1,0 +1,10 @@
+{
+    "hostname_id": 142,
+    "cve_id": 6635,
+    "cve_name": "CVE-2022-6635",
+    "cve_severity": "High",
+    "cve_created": "2022-04-17",
+    "cve_publish": "2022-06-11",
+    "cwe_id": 193,
+    "cwe_name": "CWE-193"
+}

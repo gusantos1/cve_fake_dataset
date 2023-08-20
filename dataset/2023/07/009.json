@@ -1,0 +1,10 @@
+{
+    "hostname_id": 156,
+    "cve_id": 3767,
+    "cve_name": "CVE-2022-3767",
+    "cve_severity": "Medium",
+    "cve_created": "2022-04-02",
+    "cve_publish": "2022-05-18",
+    "cwe_id": 631,
+    "cwe_name": "CWE-631"
+}

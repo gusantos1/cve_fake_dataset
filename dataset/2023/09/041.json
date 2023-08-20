@@ -1,0 +1,10 @@
+{
+    "hostname_id": 157,
+    "cve_id": 5224,
+    "cve_name": "CVE-2022-5224",
+    "cve_severity": "Medium",
+    "cve_created": "2022-02-20",
+    "cve_publish": "2022-05-17",
+    "cwe_id": 537,
+    "cwe_name": "CWE-537"
+}

@@ -1,0 +1,10 @@
+{
+    "hostname_id": 113,
+    "cve_id": 3671,
+    "cve_name": "CVE-2022-3671",
+    "cve_severity": "Critical",
+    "cve_created": "2022-06-10",
+    "cve_publish": "2022-06-26",
+    "cwe_id": 269,
+    "cwe_name": "CWE-269"
+}

@@ -1,0 +1,10 @@
+{
+    "hostname_id": 152,
+    "cve_id": 689,
+    "cve_name": "CVE-2022-0689",
+    "cve_severity": "Low",
+    "cve_created": "2022-04-10",
+    "cve_publish": "2022-04-16",
+    "cwe_id": 769,
+    "cwe_name": "CWE-769"
+}
