@@ -3,7 +3,7 @@ from typing import Tuple
 from datetime import datetime as dt
 
 
-def create_directories() -> Tuple[bool, Path, Path | Exception]:
+def create_directories() -> Tuple[Path, Path]:
     """
     Cria um diretório principal com base no ano atual e 12 subdiretórios representando os meses do ano em %MM.
     Ex:
@@ -31,6 +31,6 @@ def create_directories() -> Tuple[bool, Path, Path | Exception]:
             month_directory = base_directory / month_name
             month_directory.mkdir(exist_ok=True)
             subdirs.append(month_directory)
-        return True, base_directory, subdirs
+        return base_directory, subdirs
     except Exception as e:
-        return False, e, None
+        raise e

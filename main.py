@@ -1,6 +1,7 @@
 import random as rd
 import json
 import pandas as pd
+from typing import *
 from queue import Queue
 from ranges import (
     range_name,
@@ -10,10 +11,10 @@ from ranges import (
     range_region,
 )
 from functions import gen_hostname, gen_cve, gen_ipv4, create_host
-from directory import create_directories
+from directory import create_directories, Path
 
 # ----------------- CRIAÇÃO DOS DIRETÓRIOS ---------------------
-valid_dir, base_dir, sub_dir = create_directories()
+base_dir, sub_dir = create_directories()
 
 # ----------------- FILAS ---------------------
 queue_hostname = Queue(maxsize=len(range_name))
@@ -41,43 +42,66 @@ while not queue_cve.empty():
     cve_list.append(gen_cve(queue_cve))
 
 
-# ----------------- ESCREVENDO DIMENSÃO ---------------------
-df_dimension = pd.DataFrame(dimension_host).to_csv(
+# ----------------- FUNÇÕES DE ESCRITA PARA CADA EXTENSÃO ---------------------
+def json_fact_template(full_file_path: str, data: dict, **kwargs) -> str:
+    with open(full_file_path, "w") as file:
+        data = json.dumps(data, **kwargs)
+        file.write(data)
+    return full_file_path
+
+
+def csv_fact_template(full_file_path: str, data: dict, **kwargs) -> str:
+    df = pd.DataFrame.from_dict(data, orient="index").T
+    df.to_csv(full_file_path, **kwargs)
+    return full_file_path
+
+
+# ----------------- CLASSE RESPONSÁVEL POR ESCREVER ---------------------
+class Writer:
+    def __init__(self, directories: List[Path], max_files: int = 50):
+        self.directories = directories
+        self.max_files = rd.randint(10, max_files) + 1
+        self.sucess = set()
+        self.__possible_extension = []
+        self.__mode_writer = {}
+
+    def write(self) -> Tuple[bool, str]:
+        for directory in self.directories:
+            for i in range(1, self.max_files):
+                extension = rd.choice(self.__possible_extension)
+                full_path = f"{directory / str(i).zfill(3)}.{extension}"
+                host_id = rd.choice(dimension_host).hostname_id
+                cve = rd.choice(cve_list)
+                fact = {
+                    "hostname_id": host_id,
+                    "cve_id": cve.cve_id,
+                    "cve_name": cve.cve_name,
+                    "cve_severity": cve.cve_severity,
+                    "cve_created": cve.cve_created.strftime("%Y-%m-%d"),
+                    "cve_publish": cve.cve_publish.strftime("%Y-%m-%d"),
+                    "cwe_id": cve.cwe_id,
+                    "cwe_name": cve.cwe_name,
+                }
+                func, kwargs = self.__mode_writer.get(extension)
+                result_path = func(full_path, fact, **kwargs)
+                self.sucess.add(result_path)
+
+    def learn_to_write(self, extension, template, **kwargs) -> Dict[str, callable]:
+        """
+        Open-close
+        """
+        self.__possible_extension.append(extension)
+        self.__mode_writer[extension] = template, kwargs
+        return self.__mode_writer
+
+
+# ----------------- ESCREVENDO DIMENSÃO NO DIRETÓRIO PRINCIPAL ---------------------
+df_dimensao = pd.DataFrame(dimension_host).to_csv(
     f"{base_dir}/dim.csv", index=False, sep="|"
 )
 
-# ----------------- ESCREVENDO ARQUIVOS NOS SUBDIRETÓRIOS ---------------------
-
-max_files = rd.randint(10, 50) + 1
-for directory in sub_dir:
-    for i in range(1, max_files):
-        possible_extension = ["json", "csv"]
-        extension = rd.choice(possible_extension)
-        file_name = f"{directory / str(i).zfill(3)}.{extension}"
-        with open(file_name, "w") as file:
-            host_id = rd.choice(dimension_host).hostname_id
-            cve = rd.choice(cve_list)
-            fact = {
-                "hostname_id": host_id,
-                "cve_id": cve.cve_id,
-                "cve_name": cve.cve_name,
-                "cve_severity": cve.cve_severity,
-                "cve_created": cve.cve_created.strftime("%Y-%m-%d"),
-                "cve_publish": cve.cve_publish.strftime("%Y-%m-%d"),
-                "cwe_id": cve.cwe_id,
-                "cwe_name": cve.cwe_name,
-            }
-            match extension:
-                case "json":
-                    data = json.dumps(fact, indent=4)
-                    file.write(data)
-                case "csv":
-                    data = pd.DataFrame.from_dict(fact, orient="index").T
-                    data.to_csv(file_name, index=False, sep=";")
-                case _:
-                    raise ValueError(
-                        f"Extensão de arquivo '{extension}' não suportada."
-                    )
-
-# class Writer:
-#     def __init__(self, data:)
+# ----------------- ESCREVENDO FATOS NOS SUBDIRETÓRIOS ---------------------
+writer = Writer(sub_dir)
+writer.learn_to_write("csv", csv_fact_template, index=False, sep=";")
+writer.learn_to_write("json", json_fact_template, indent=4)
+writer.write()
